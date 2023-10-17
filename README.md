@@ -28,7 +28,68 @@ DIE(tmp == NULL, "error reallocating\n");
 ldb->hash_ring = tmp;
 ```
 
-## Personal comments
-* As for some personal comments, I would like to appreciate the effort put into the making of the homework by the team, providing us with the possibily of implementing something that has quite some `practicability` into real-life `applications` and for the use of `data structures` in a not-so-abstract environment
-* As I am always striving to do better with each homework, I would point out that my `modularization` could have been better in some cases but for the most part I am satisfied with how this homework turned out to be implemented
-* I have kept the links from the `hashing methods` used for the `hash_table` implementation as they were taken from the laboratory, where the credits had been provided beforehand
+## Usage
+```
+#Input
+add_server 45624
+
+add_server 47838
+
+add_server 4974
+
+store "2227008d3af215fef3a827b5e377bd9c" 
+"trustedsnap Solid Women's Tunic"
+
+add_server 89305
+
+retrieve "2227008d3af215fef3a827b5e377bd9c"
+
+store "d60e567db00840c3ca46251f108cff1b" "EIRA Casual Printed Women's Kurti"
+
+retrieve "2227008d3af215fef3a827b5e377bd9c"
+
+remove_server 4974
+
+add_server 25301
+
+store "5834e87253f72c0063d2d9baca38d573" "SportsHouse makhan chor krishna Radium Showpiece  -  23 cm"
+
+add_server 58225
+
+retrieve "2227008d3af215fef3a827b5e377bd9c"
+store "6634de7b39a5b0658c74ab098450096d" "D-Link 
+DIR-816 Wireless AC750 Dual Band Router"
+
+store "0c82b9c474b0917dd6eaaa77e19d753a" "FashionPedia Canvas Shoes, Sneakers"
+
+retrieve "6634de7b39a5b0658c74ab098450096d"
+
+store "e8c42ea6c7944c0d77beca6db7ac8623" "Grafion by Grafion - Comfort Feel Women's Full Coverage Bra"
+
+retrieve "e8c42ea6c7944c0d77beca6db7ac8623"
+```
+```
+#Output
+
+Stored trustedsnap Solid Women's Tunic on server 47838.
+
+Retrieved trustedsnap Solid Women's Tunic from server 47838.
+
+Stored EIRA Casual Printed Women's Kurti on server 4974.
+
+Retrieved trustedsnap Solid Women's Tunic from server 47838.
+
+Stored SportsHouse makhan chor krishna Radium Showpiece  -  23 cm on server 25301.
+
+Retrieved trustedsnap Solid Women's Tunic from server 47838.
+
+Stored D-Link DIR-816 Wireless AC750 Dual Band Router on server 89305.
+
+Stored FashionPedia Canvas Shoes, Sneakers on server 58225.
+
+Retrieved D-Link DIR-816 Wireless AC750 Dual Band Router from server 89305.
+
+Stored Grafion by Grafion - Comfort Feel Women's Full Coverage Bra on server 58225.
+
+Retrieved Grafion by Grafion - Comfort Feel Women's Full Coverage Bra from server 58225.
+```
